@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#scorepoint{
+    display: none;
+}
+
+
+
+.container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+}
+
+.container h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+}
+
+.container button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 7%;
+    font-weight: 530;
+
+}
+
+.btn-container{
+    width: 60%;
+    
+    height: 400px;
+    position: relative;
+    left: 20%;
+    
+    
+}
+
+.btn-container button{
+    position: relative;
+    left: 32%;
+    top: 40%;
+    
+}
+.btn-container p{
+    position: relative;
+    left: 42%;
+    top: 50%;
+    color: rgb(255, 0, 43);
+}
+
+button{
+    transition: all 0.3s ease-in-out;
+}
+button:focus{
+     
+    background-color: rgba(39, 37, 37, 0.253);
+
+    
+}
+button:hover{
+     
+    background-color: rgba(0, 0, 0, 0.548);
+}
+img{
+    display: none;
+}
+
+
+@media (max-width:400px),(max-width:500px)
+{
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        display: block;
+    }
+    
+    .h1{
+        background-color: black;
+        border-radius: 5px;
+    }
+    .h1 h1{
+        color: white;
+        text-shadow: 2px 2px #e2dddd6e;
+    }
+
+    .btn-container{
+        position: absolute;
+        top:120%;
+        width: 80%;
+        height: 370px;
+        border: none;
+        display: inline-block;
+        left: 10%;
+        border-radius: 4px;
+        box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.178);
+    }
+
+    .btn-container button{
+        border: none;
+        box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.178);
+        position: relative;
+        left: 14%;
+    }
+    .btn-container img{
+        position: absolute;
+        top: 8%;
+        width: 100%;
+        opacity: 0.7;
+    }
+
+    #computer{
+        position: relative;
+        left: 7%;
+        color: darkred;
+        font-size: 1.2rem;
+    }
+    #print{
+        font-size: 1.2rem;
+        position: relative;
+        top:45%;
+        left: 70%;
+        display: inline;
+        color: green;
+    }
+    #score{
+        position: relative;
+        font-size: 1.2rem;
+        left: 26%;
+        top: 63%;
+        display: inline;
+        color: darkblue;
+    }
+    #scorepoint{
+        font-size: 1.2rem;
+        
+        position: absolute;
+        top:68%
+    }
+    
+}
