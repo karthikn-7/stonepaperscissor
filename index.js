@@ -49,6 +49,7 @@ stone.addEventListener("click", function()
         if(stoneresult === "stone"){
             printad.innerHTML = "You: stone"
             score.innerHTML = result += 0
+            tie.style.display ="block"
             tie.innerHTML = "Tie"
             
         }
@@ -101,6 +102,7 @@ paper.addEventListener("click", function()
         else if(stoneresult === "paper"){
             printad.innerHTML = "You: paper"
             score.innerHTML =result +=0
+            tie.style.display ="block"
             tie.innerHTML = "Tie"
         }
         else if(stoneresult === "scissor"){
@@ -153,6 +155,7 @@ scissor.addEventListener("click", function()
             printad.innerHTML = "You: scissor"
             score.innerHTML = result += 0
             tie.innerHTML = "Tie"
+            tie.style.display ="block"
         }
         
     }
