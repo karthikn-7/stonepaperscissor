@@ -110,6 +110,7 @@ img{
         left: 14%;
         border: none;
         border-radius: 15%;
+        transition: all 0.1s ease-in-out;
     }
     button:active{
         box-shadow: none;
