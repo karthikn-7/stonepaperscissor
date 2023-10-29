@@ -55,12 +55,13 @@ stone.addEventListener("click", function()
         else if(stoneresult === "paper"){
             printad.innerHTML = "You: stone"
             score.innerHTML =result -=1
+            tie.style.display ="none"
             
         }
         else if(stoneresult === "scissor"){
             printad.innerHTML = "You: stone"
             score.innerHTML = result += 1
-            
+            tie.style.display ="none"
         }
         
     }
@@ -95,7 +96,7 @@ paper.addEventListener("click", function()
         if(stoneresult === "stone"){
             printad.innerHTML = "You: paper"
             score.innerHTML = result += 1
-            
+            tie.style.display ="none"
         }
         else if(stoneresult === "paper"){
             printad.innerHTML = "You: paper"
@@ -105,7 +106,7 @@ paper.addEventListener("click", function()
         else if(stoneresult === "scissor"){
             printad.innerHTML = "You: paper"
             score.innerHTML = result -= 1
-            
+            tie.style.display ="none"
         }
         
     }
@@ -141,12 +142,12 @@ scissor.addEventListener("click", function()
         if(stoneresult === "stone"){
             printad.innerHTML = "You: scissor"
             score.innerHTML = result -= 1
-            
+            tie.style.display ="none"
         }
         else if(stoneresult === "paper"){
             printad.innerHTML = "You: scissor"
             score.innerHTML =result +=1
-            
+            tie.style.display ="none"
         }
         else if(stoneresult === "scissor"){
             printad.innerHTML = "You: scissor"
