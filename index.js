@@ -5,6 +5,7 @@ var stone = document.getElementById("stone")
 var paper = document.getElementById("paper")
 var scissor = document.getElementById("scissor")
 var printad = document.getElementById("print")
+var tie = document.getElementById("tie")
 
 var score = document.getElementById("score")
 var computer = document.getElementById("computer")
@@ -12,9 +13,7 @@ var computer = document.getElementById("computer")
 var scorepoint = document.getElementById("scorepoint")
 
 var result = 0;
-if(result <0){
-    alert("You lost the game!")
-}
+
 
 
 
@@ -50,6 +49,7 @@ stone.addEventListener("click", function()
         if(stoneresult === "stone"){
             printad.innerHTML = "You: stone"
             score.innerHTML = result += 0
+            tie.innerHTML = "Tie"
             
         }
         else if(stoneresult === "paper"){
@@ -100,7 +100,7 @@ paper.addEventListener("click", function()
         else if(stoneresult === "paper"){
             printad.innerHTML = "You: paper"
             score.innerHTML =result +=0
-            
+            tie.innerHTML = "Tie"
         }
         else if(stoneresult === "scissor"){
             printad.innerHTML = "You: paper"
@@ -151,7 +151,7 @@ scissor.addEventListener("click", function()
         else if(stoneresult === "scissor"){
             printad.innerHTML = "You: scissor"
             score.innerHTML = result += 0
-            
+            tie.innerHTML = "Tie"
         }
         
     }
