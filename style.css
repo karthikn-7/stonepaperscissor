@@ -103,11 +103,21 @@ img{
     }
 
     .btn-container button{
-        border: none;
-        box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.178);
+        background-color: #58cc02;
+        color: white;
+        box-shadow: 0 5px 0 #58a700;
         position: relative;
         left: 14%;
+        border: none;
+        border-radius: 15%;
     }
+    button:active{
+        box-shadow: none;
+        transform: translateY(5px);
+    }
+
+
+
     .btn-container img{
         position: absolute;
         top: 8%;
@@ -116,32 +126,42 @@ img{
     }
 
     #computer{
-        position: relative;
-        left: 7%;
+        position: absolute;
+        top:106%;
+        left: 2%;
         color: darkred;
         font-size: 1.2rem;
+        font-weight: bolder;
     }
     #print{
         font-size: 1.2rem;
-        position: relative;
-        top:45%;
-        left: 70%;
+        position: absolute;
+        top:106%;
+        left: 68%;
         display: inline;
         color: green;
+        font-weight: bolder;
     }
     #score{
-        position: relative;
+        position: absolute;
         font-size: 1.2rem;
-        left: 26%;
-        top: 63%;
+        left: 49%;
+        top:126%;
         display: inline;
         color: darkblue;
+        font-weight: bolder;
+
     }
-    #scorepoint{
-        font-size: 1.2rem;
-        
+    #tie{
         position: absolute;
-        top:68%
+        top: 100%;
+        left: 48%;
+        color: aliceblue;
+        background-color: black;
+        display: inline;
+        font-weight: bolder;
+        font-size: 1.2rem;
     }
+
     
 }
